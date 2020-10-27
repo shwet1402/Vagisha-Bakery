@@ -147,7 +147,7 @@ main {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    background-image: url(/images/background-2.jpg);
+    background-image: url('/images/background-2.jpg');
     min-height: 100vh;
 }
 
