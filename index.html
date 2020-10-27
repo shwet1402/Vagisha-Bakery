@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vagisha's Bakery Shop">
+    <meta name="description" content="store front for Vagisha's Bakery Shop">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="icon" type="/imgage/png" href="images/cake-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+
+    <title>Home | Vagisha's Bakery Shop</title>
+
+    <style>
+        #promos {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: ivory;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="row limited">
+            <section class="column small-12">
+                <img src="/images/logo.svg" alt="Cake logo">
+                <h1>Vagisha's</h1>
+                <h2>Fantastic Bakery Shop</h2>
+            </section>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li style="flex-grow:1;"></li>
+                <li><img src="images/logo.svg" width="50" height="40"> </li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Pies.html">Pies</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <!-- <li><a href="https://www.openstreetmap.org/#map=18/47.676389199999996/-122.1252444" target="_blank">Maps</a></li> -->
+                <!-- <li><a href="#" onclick="drawMap();">GoogleMap</a></li> -->
+                <li><a href="map.html">Contact</a></li>
+                <li style="flex-grow:2;"></li>
+                <li style="text-align: center;">
+                    <form class="search" action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                        <input type="search" class="searchbox" placeholder="Search our store" />
+                        <input type="submit" class="searchbtn" value=" " />
+
+                    </form>
+                </li>
+
+                <!-- <li>
+                    <form action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                    <input type="search" class="searchbox" placeholder="Search our store" />
+                    <button type="submit">Search</button>
+                </li> -->
+                <li style="flex-grow:1;"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <aside id="leftmenu">
+            <div>
+                <section class="row limited column small-3">
+                    <img src="images/181-1813320_free-logo-maker-cake-logo-template-kue-vector.png" alt="Logo">
+                </section>
+                <!-- <img src="/Html5javascript/images/Test.svg" width="10" height="20" alt="Logo"> -->
+                <!-- <figcaption style="color:#b293c0; font-weight:600;">Vagisha's Cake shop</figcaption>-->
+
+                <section>
+                    <h4>Browse our pies</h4>
+                    <ul>
+                        <li>
+                            <a href="Pies.html">
+                                <div>All Pies</div>
+                                <span>8</span>
+                            </a>
+                        </li>
+                        <li><a href="#promos">Promotions</a></li>
+                    </ul>
+
+                    <!-- <p>Data download is in progress, please wait patiently:</p>
+                    <progress value="2" max="5"></progress> <br>
+                    <progress max="5"></progress> -->
+
+
+                    <!-- <section class="progressbar">
+                        <p Our goal is to have 1000 users:</p>
+                            <span>0</span>
+                            <progress value="50" max="500"></progress>
+                            <span>500</span>
+                            <p>Curret Users: 50</p>
+                    </section> -->
+                </section>
+            </div>
+
+        </aside>
+        <article>
+            <section>
+                <h1>Welocome to Vagisha's Bakery Shop</h1>
+                <figure>
+                    <img src="/images/logo.JPG" class="banner" alt="vagisha">
+                </figure>
+            </section>
+
+            <section class="sub-title">
+                <h2>Our History</h2>
+                <p>From pecan to pulp,our pies are made in the warmth. Take a moment to <a href="/Pies.html">browse our pies </a> and see which of our delectable deserts are soon to arrive on your door step. <br> <br>Year after year this Asian bakery produce
+                    high quality pastries and cakes. People typically order the white "fruit" cake, meaning a cake with lots of fresh fruit, not the American hard candied fruit product that is often regifted at the holidays.
+
+                    <br><br>We take orders for
+                    <strong>decorated cakes </strong> and it's well worth the trip.</p>
+                </p>
+            </section>
+            <div id="promos">
+                <h2>Our Weekly Promotions</h2>
+                <div class="row limited">
+                    <section class="column small-12 medium-6 labeled">
+                        <h6>Strawberry Pie</h6>
+                        <img src="images/products/pie-strawberry.jpg" alt="weekly promos" />
+                        <figcaption><small>$8.99 - serves4</small></figcaption>
+                    </section>
+                    <section class="column small-12 medium-6 labeled">
+                        <h6>Apple Pie</h6>
+                        <img src="images/products/pie-apple.jpg" alt="weekly promos" />
+                        <figcaption><small>$15.99 - serves4</small></figcaption>
+                    </section>
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <footer>
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Bethany's Pie Shop</li>
+                    <li>123 Bakery Street</li>
+                    <li>Brussels, Belgium</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Catering</li>
+                    <li>Delivery</li>
+                    <li>Swag Shop</li>
+                    <li>Support</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <img src="images/logo2.png" alt="logo">
+                <p>&copy; 2020 Vagisha's Bakery Shop &bull; all rights reserved.</p>
+            </section>
+        </div>
+        <!-- end row -->
+
+    </footer>
+</body>
+<script src="js/menuToggle.js"></script>
+<script>
+    function drawMap() {
+        window.navigator.geolocation.getCurrentPosition(function(pos) {
+            window.location.href = `https://google.com/maps?q=${pos.coords.latitude},${pos.coords.longitude}`;
+
+        })
+    }
+</script>
+
+</html>

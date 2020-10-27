@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vagisha's Bakery Shop">
+    <meta name="description" content="store front for Vagisha's Bakery Shop">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="icon" type="imgage/png" href="/images/cake-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Order | Vagisha Bakery Shop</title>
+
+    <style>
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+            padding: 10px;
+            border: solid 1px #999;
+            border-radius: 2px;
+            width: 80%;
+        }
+        
+        label {
+            font-weight: 600;
+        }
+        
+        input[type="reset"] {
+            background: transparent;
+            border: 0;
+            text-decoration: underline;
+            cursor: pointer;
+            width: 33%;
+            text-align: left;
+        }
+        
+        input[type="submit"] {
+            padding: 10px;
+            border: solid 1px #ff9100;
+            border-radius: 3px;
+            background-color: #ff9100;
+        }
+        /* @media only screen and (min-width: 768px) {
+            article {
+                width: 70%;
+            }
+        } */
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="row limited">
+            <section class="column small-12">
+                <img src="/images/logo.svg" alt="Cake logo">
+                <h1>Vagisha's</h1>
+                <h2>Fantastic Bakery Shop</h2>
+            </section>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li style="flex-grow:1;"></li>
+                <li><img src="images/logo.svg" width="50" height="40"> </li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="Pies.html">Pies</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <!-- <li><a href="https://www.openstreetmap.org/#map=18/47.676389199999996/-122.1252444" target="_blank">Maps</a></li> -->
+                <!-- <li><a href="#" onclick="drawMap();">GoogleMap</a></li> -->
+                <li><a href="map.html">Maps</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li style="flex-grow:2;"></li>
+                <li style="text-align: center;">
+                    <form class="search" action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                        <input type="search" class="searchbox" placeholder="Search our store" />
+                        <input type="submit" class="searchbtn" value=" " />
+
+                    </form>
+                </li>
+
+                <!-- <li>
+                    <form action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                    <input type="search" class="searchbox" placeholder="Search our store" />
+                    <button type="submit">Search</button>
+                </li> -->
+                <li style="flex-grow:1;"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <aside id="leftmenu">
+            <div class="row limited">
+                <section class="column small-3">
+                    <img src="/images/181-1813320_free-logo-maker-cake-logo-template-kue-vector.png" alt="Logo">
+                </section>
+                <!-- <img src="/Html5javascript/images/Test.svg" width="10" height="20" alt="Logo"> -->
+                <!-- <figcaption style="color:#b293c0; font-weight:600;">Vagisha's Cake shop</figcaption>-->
+            </div>
+            <section>
+                <h4>Browse our pies</h4>
+                <ul>
+                    <li>
+                        <a href="/Pies.html">
+                            <div>All Pies</div>
+                            <span>8</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#promos">Promotions</a></li>
+                </ul>
+
+                <!-- <p>Data download is in progress, please wait patiently:</p>
+                    <progress value="2" max="5"></progress> <br>
+                    <progress max="5"></progress> -->
+
+
+                <!-- <section class="progressbar">
+                        <p Our goal is to have 1000 users:</p>
+                            <span>0</span>
+                            <progress value="50" max="500"></progress>
+                            <span>500</span>
+                            <p>Curret Users: 50</p>
+                    </section> -->
+            </section>
+        </aside>
+        <article>
+            <h1>Order</h1>
+            <div>
+                <section>
+                    <form action="http://https://localhost:5001/weatherforecast" method="post">
+                        <input type="hidden" id="pie-order" name="pie-order">
+                        <input type="hidden" id="location" name="location">
+                        <div class="input-group">
+                            <div><label for="first-name">First Name</label></div>
+                            <div><input type="text" name="first-name" id="first-name" /></div>
+                        </div>
+
+                        <div class="input-group">
+                            <div><label for="last-name">Last Name</label></div>
+                            <div><input type="text" name="last-name" id="last-name" /></div>
+                        </div>
+
+                        <div class="input-group">
+                            <div><label for="address">Address</label></div>
+                            <div><input type="text" name="address" id="address" /></div>
+                        </div>
+
+                        <div class="input-group">
+                            <div><label for="state">State</label></div>
+                            <div>
+                                <select name="state" id="state">
+                            <option value="" selected>[select one]</option>
+                            <option value="Albama">Albama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arkansa">Arkansa</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Texas">Texas</option>
+                        </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div><label for="postal-code">Postal Code</label></div>
+                            <div><input type="text" name="postal-code" id="postal-code" /></div>
+                        </div>
+
+                        <div class="input-group">
+                            <div><label for="comments">Comments</label></div>
+                            <div>
+                                <textarea name="comments" id="comments" cols="20" rows="10">
+                        </textarea>
+                            </div>
+                        </div>
+                        <input type="reset" value="Reset" />
+                        <input type="submit" value=" Order " />
+                    </form>
+                </section>
+            </div>
+        </article>
+        <aside>
+            <h2> Your Shopping Cart</h2>
+            <div class="Shoppie">
+                <ul></ul>
+                <button onclick="history.go(-1)"> Modify Order</button>
+                <!-- <section class="small-3">
+                <img src="/" />
+                <div class="column">
+                    <div class="title"></div>
+                    <div class="price"></div>
+                </div>
+                <p class="desc"></p>
+            </section> -->
+            </div>
+        </aside>
+
+    </main>
+    <footer class="clearfix">
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Bethany's Pie Shop</li>
+                    <li>123 Bakery Street</li>
+                    <li>Brussels, Belgium</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Catering</li>
+                    <li>Delivery</li>
+                    <li>Swag Shop</li>
+                    <li>Support</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <img src="images/logo2.png" alt="logo">
+                <p>&copy; 2020 Vagisha's Bakery Shop &bull; all rights reserved.</p>
+            </section>
+        </div>
+        <!-- end row -->
+
+    </footer>
+</body>
+<script src="js/menuToggle.js"></script>
+<script>
+    window.addEventListener("DOMContentLoaded", function(e) {
+        let locationbox = document.querySelector("#location");
+        let location = {
+            latitude: "unkown",
+            longitude: "unkown"
+        };
+
+        window.navigator.geolocation.getCurrentPosition(
+            function(position) {
+                location = {
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude
+                };
+                locationbox.value = JSON.stringify(location);
+            },
+            function(error) {
+                locationbox.value = JSON.stringify(location);
+            });
+
+        const cart = localStorage.getItem("cart");
+        if (cart) {
+            const pieorders = JSON.parse(cart);
+            const pie = document.querySelectorAll(".Shoppie ul")[0];
+            pie.innerHTML = "";
+            const size = pieorders.pies.length;
+            for (var i = 0; i < size; i++) {
+                var liElement = document.createElement('li');
+                // img = docume.createElement('img');
+                // img.setAttribute("src", `/images/products/${pieOrders.title}.jpg`);
+                liElement.innerHTML = pieorders.pies[i].pieTitle + ": " + pieorders.pies[i].price;
+                pie.appendChild(liElement);
+            }
+        }
+
+        // const order = localStorage.getItem("order");
+        // if (order) {
+        //     const pieOrder = JSON.parse(order);
+
+        //     const orderInput = document.querySelector("#pie-order");
+        //     orderInput.value = order;
+
+        //     const pie = document.querySelector(".pie");
+
+        //     const title = pie.querySelector(".title");
+        //     const price = pie.querySelector(".price");
+        //     const desc = pie.querySelector(".desc");
+
+        //     title.innerText = pieOrder.title;
+        //     price.innerText = pieOrder.price;
+        //     desc.innerText = "";
+
+        //     const img = pie.querySelector("img");
+        //     console.log(pieOrder.id);
+        //     img.setAttribute("src", `/images/products/${pieOrder.id}.jpg`);
+        //     img.setAttribute("alt", pieOrder.title);
+        // }
+    });
+</script>
+
+</html>

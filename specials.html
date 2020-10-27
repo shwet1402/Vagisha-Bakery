@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" type="imgage/png" href="/images/cake-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+
+    <title>Home | Vagisha's Bakery Shop</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="row limited">
+            <section class="column small-12">
+                <img src="/images/logo.svg" alt="Cake logo">
+                <h1>Vagisha's</h1>
+                <h2>Fantastic Bakery Shop</h2>
+            </section>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li style="flex-grow:1;"></li>
+                <li><img src="images/logo.svg" width="50" height="40"> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pies.html">Pies</a></li>
+                <li class="active"><a href="specials.html">Specials</a></li>
+                <li><a href="map.html">Contact</a></li>
+                <li style="flex-grow:2;"></li>
+                <li style="text-align: center;">
+                    <form class="search" action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                        <input type="search" class="searchbox" placeholder="Search our store" />
+                        <input type="submit" class="searchbtn" value=" " />
+
+                    </form>
+                </li>
+
+                <!-- <li>
+                    <form action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                    <input type="search" class="searchbox" placeholder="Search our store" />
+                    <button type="submit">Search</button>
+                </li> -->
+                <li style="flex-grow:1;"></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <aside id="leftmenu">
+            <div>
+                <section class="row limited column small-3">
+                    <img src="images/181-1813320_free-logo-maker-cake-logo-template-kue-vector.png" alt="Logo">
+                </section>
+                <!-- <img src="/Html5javascript/images/Test.svg" width="10" height="20" alt="Logo"> -->
+                <!-- <figcaption style="color:#b293c0; font-weight:600;">Vagisha's Cake shop</figcaption>-->
+
+                <section>
+                    <h4>Browse our pies</h4>
+                    <ul>
+                        <li>
+                            <a href="Pies.html">
+                                <div>All Pies</div>
+                                <span>8</span>
+                            </a>
+                        </li>
+                        <li><a href="#promos">Promotions</a></li>
+                    </ul>
+
+                    <form>
+                        <p><br>Our goal is to have 1000 users:</p>
+                        <span>0</span>
+                        <progress value="50" max="1000"></progress>
+                        <span>1000</span>
+
+                    </form>
+                </section>
+            </div>
+        </aside>
+
+        <article>
+            <h1>Grandma's Special Recepie - Apple Pie</h1>
+            <p><br>This was my grandmother's apple pie recipe. I have never seen another one quite like it. It will always be my favorite and has <em>won me several first place prizes</em> in local competitions. I hope it becomes one of your favorites as
+                well! <br> <br>Our favorite grandma's recipe for making classic apple pie from scratch. This recipe guarantees apple pie with perfectly cooked (not mushy) apples surrounded by a thickened and gently spiced sauce all baked inside a flaky,
+                golden brown crust.
+            </p>
+
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Incredients</th>
+                            <th>Quantity</th>
+                            <th>Directions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Milk</td>
+                            <td>1 Cup</td>
+                            <td class="collapsed">Preheat oven to 425 degrees F (220 degrees C). Melt the butter in a saucepan. Stir in flour to form a paste. Add water, white sugar and brown sugar, and bring to a boil. Reduce temperature and let simmer.</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar</td>
+                            <td>1/4 Cup</td>
+                            <td class="collapsed" onclick="menuToggle()">Place the bottom crust in your pan. Fill with apples, mounded slightly. Cover with a lattice work crust. Gently pour the sugar and butter liquid over the crust. Pour slowly so that it does not run off.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Apple</td>
+                            <td>2</td>
+                            <td class="collapsed">Bake 15 minutes in the preheated oven. Reduce the temperature to 350 degrees F (175 degrees C). Continue baking for 35 to 45 minutes, until apples are soft.</tr>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/VFQsDAADPLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                </div>
+
+
+            </section>
+
+            <!-- <p>Learn more on this <a href="https://pluralsite.com">link</a></p> -->
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Bethany's Pie Shop</li>
+                    <li>123 Bakery Street</li>
+                    <li>Brussels, Belgium</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Catering</li>
+                    <li>Delivery</li>
+                    <li>Swag Shop</li>
+                    <li>Support</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <img src="images/logo2.png" alt="logo">
+                <p>&copy; 2020 Vagisha's Bakery Shop &bull; all rights reserved.</p>
+            </section>
+        </div>
+        <!-- end row -->
+
+    </footer>
+</body>
+<script src="js/menuToggle.js"></script>
+<script>
+    function drawMap() {
+        window.navigator.geolocation.getCurrentPosition(function(pos) {
+            window.location.href = `https://google.com/maps?q=${pos.coords.latitude},${pos.coords.longitude}`;
+
+        })
+    }
+</script>
+
+</html>

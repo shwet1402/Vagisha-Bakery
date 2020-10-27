@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="icon" type="imgage/png" href="images/cake-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+
+    <script src="js/Drag&Drop.js"></script>
+    <title>Pies | Vagisha Bakery Shop</title>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="row limited">
+            <section class="column small-12">
+                <img src="/images/logo.svg" alt="Cake logo">
+                <h1>Vagisha's</h1>
+                <h2>Fantastic Bakery Shop</h2>
+            </section>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li style="flex-grow:1;"></li>
+                <li><img src="images/logo.svg" width="50" height="40"> </li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="Pies.html">Pies</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="map.html">Contact</a></li>
+                <li style="flex-grow:2;"></li>
+                <li style="text-align: center;">
+                    <form class="search" action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                        <input type="search" class="searchbox" placeholder="Search our store" />
+                        <input type="submit" class="searchbtn" value=" " />
+
+                    </form>
+                </li>
+
+                <!-- <li>
+                    <form action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                    <input type="search" class="searchbox" placeholder="Search our store" />
+                    <button type="submit">Search</button>
+                </li> -->
+                <li style="flex-grow:1;"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <aside id="leftmenu">
+            <div>
+                <section class="row limited column small-3">
+                    <img src="images/181-1813320_free-logo-maker-cake-logo-template-kue-vector.png" alt="Logo">
+                </section>
+                <section>
+                    <h4>Browse our pies</h4>
+                    <ul>
+                        <li>
+                            <a href="Pies.html">
+                                <div>All Pies</div>
+                                <span>8</span>
+                            </a>
+                        </li>
+                        <li><a href="#promos">Promotions</a></li>
+                    </ul>
+                </section>
+            </div>
+
+        </aside>
+        <article>
+            <div class="row limited">
+                <section class="columns small-12">
+                    <h1>Pies</h1>
+                </section>
+
+                <section class="column small-6 medium-6 large-3 pies" id="Pie-0">
+                    <div class="title">
+                        <h3>Apple</h3>
+                    </div>
+                    <img src="/images/products/pie-apple.jpg" alt="Apple pie">
+                    <div class="price column small-6">$12.95</div>
+                    <!-- <button data-order="pie-apple">Order</button>
+                    <button onclick="Delete(this);">Delete</button> -->
+                </section>
+
+                <section class="column small-6 medium-6 large-3 pies" id="Pie1">
+                    <div class="title">
+                        <h3>Blueberry</h3>
+                    </div>
+                    <img src="images/products/pie-cherry.jpg" alt="blueberry pie">
+                    <div class="price column small-6">$18.97</div>
+                    <!-- <button data-order="pie-cherry">Order</button> -->
+                </section>
+
+
+                <section class="column small-6 medium-6 large-3 pies" id="Pie2">
+                    <div class="title">
+                        <h3>Cherry</h3>
+                    </div>
+                    <img src="images/products/pie-cherry.jpg" alt="blueberry pie">
+                    <div class="price column small-6">$16.97</div>
+                </section>
+
+                <section class="column small-6 medium-6 large-3 pies" id="Pie3">
+                    <div class="title">
+                        <h3>Cranberry</h3>
+                    </div>
+                    <img src="images/products/pie-cranberry.jpg" alt="cranberry cheesecake">
+                    <div class="price column small-6">$18.94</div>
+                </section>
+
+                <section class="column small-6 medium-6 large-3 pies" id="Pie4">
+                    <div class="title">
+                        <h3>Peach</h3>
+                    </div>
+                    <img src="images/products/pie-peach.jpg" alt="cranberry cheesecake">
+                    <div class="price">$18.97</div>
+                </section>
+                <section class="column small-6 medium-6 large-3 pies" id="Pie5">
+                    <div class="title">
+                        <h3>Pumpkin</h3>
+                    </div>
+                    <img src="images/products/pie-pumpkin.jpg" alt="cranberry cheesecake">
+                    <div class="price">$14.97</div>
+                </section>
+                <section class="column small-6 medium-6 large-3 pies" id="Pie6">
+                    <div class="title">
+                        <h3>Rhubarb</h3>
+                    </div>
+                    <img src="images/products/pie-rhubarb.jpg" alt="cranberry cheesecake">
+                    <div class="price">$21.97</div>
+                </section>
+                <section class="column small-6 medium-6 large-3 pies" id="Pie7">
+                    <div class="title">
+                        <h3>Strawberry</h3>
+                    </div>
+                    <img src="images/products/pie-strawberry.jpg" alt="cranberry cheesecake">
+                    <div class="price">$12.97</div>
+                </section>
+
+
+
+            </div>
+        </article>
+        <aside id="shoppingCart">
+            <section class="column small-12">
+                <p>
+                    <h2>Your Shopping cart </h2>
+                    <small>Drag your favourite Pies here</small><br><br>
+                </p>
+            </section>
+
+            <ul></ul>
+            <br>
+            <button data-order="order" onclick="PlaceOrder()">Place Order</button>
+        </aside>
+        <!-- <section id="shoppingCart">
+            <h2>Your Shopping cart</h2>
+            <ul></ul>
+        </section> -->
+
+
+    </main>
+    <footer>
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Bethany's Pie Shop</li>
+                    <li>123 Bakery Street</li>
+                    <li>Brussels, Belgium</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Catering</li>
+                    <li>Delivery</li>
+                    <li>Swag Shop</li>
+                    <li>Support</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <img src="images/logo2.png" alt="logo">
+                <p>&copy; 2020 Vagisha's Bakery Shop &bull; all rights reserved.</p>
+            </section>
+        </div>
+        <!-- end row -->
+
+    </footer>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", addDndHandlers, false);
+
+    function DeleteItem(currentEl) {
+        var aElements = currentEl.parentNode.parentNode.getElementsByClassName('delete');
+        var aElementsLength = aElements.length;
+        var index;
+        for (var i = 0; i < aElementsLength; i++) {
+            if (aElements[i] == currentEl) //this condition is never true except for current element
+            {
+                index = i;
+            }
+        }
+
+        var currentCart = null;
+        currentCart = JSON.parse(localStorage.getItem('cart'));
+        if (index > -1) {
+            currentCart.pies.splice(index, 1);
+        }
+        localStorage.setItem('cart', JSON.stringify(currentCart));
+        currentCart = JSON.parse(localStorage.getItem("cart"));
+        currentEl.parentNode.parentNode.removeChild(currentEl.parentNode);
+        location.reload();
+        return false;
+    }
+
+    function PlaceOrder() {
+        const url = window.location.href.replace("Pies.html", "order.html");
+        window.location.href = url;
+    }
+
+    window.addEventListener("DOMContentLoaded", function(e) {
+
+        const orderButtons = document.querySelectorAll("button[data-order]");
+        orderButtons.forEach(function(button) {
+
+            button.addEventListener("click", function(e) {
+                const button = e.currentTarget;
+                const container = button.parentNode;
+
+                const order = {
+                    id: button.getAttribute("data-order"),
+                    title: container.querySelector(".title").innerText,
+                    price: container.querySelector(".price").innerText,
+
+                };
+
+                localStorage.setItem("order", JSON.stringify(order));
+
+                const url = window.location.href.replace("Pies.html", "order.html");
+                window.location.href = url;
+            });
+        });
+    });
+</script>
+
+
+
+<script src="js/menuToggle.js"></script>
+
+
+</html>

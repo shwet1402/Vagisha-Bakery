@@ -1,0 +1,21 @@
+@media only screen and (min-width:1028px) {
+    .large-3 {
+        flex-basis: 25%;
+    }
+    nav ul {
+        margin-left: 2vw;
+    }
+    nav li {
+        width: auto;
+    }
+    nav a {
+        padding: .7rem 1rem;
+    }
+    main {
+        max-width: 1400px;
+        justify-content: center;
+    }
+    .banner {
+        width: 50%;
+    }
+}

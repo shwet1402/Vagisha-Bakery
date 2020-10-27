@@ -1,0 +1,409 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: lavenderblush
+}
+
+
+/* grid rules */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 0 2vw;
+    margin: 0 0 0.75rem 0;
+}
+
+.small-12 {
+    flex-basis: 100%;
+}
+
+.small-6 {
+    flex-basis: 50%;
+}
+
+.limited {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+/* header rules*/
+
+header {
+    background-color: #9b87b8;
+    box-shadow: 0 3px;
+}
+
+header img {
+    float: left;
+    height: 85px;
+    padding-right: 10px;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+}
+
+header h1 {
+    padding: .5rem 0 0 0;
+    font-size: 1.95rem;
+}
+
+header h2 {
+    padding: .2rem 0 0 0;
+    font-size: 1.05rem;
+}
+
+
+/* nav rules */
+
+button#hamburgerBtn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
+nav {
+    background-color: #23cfa7;
+    box-shadow: 0 3px 15px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li.active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul {
+    display: none;
+}
+
+nav input {
+    border-radius: 5px;
+}
+
+.searchbtn {
+    font-weight: 500;
+    background: url('/images/favicon-32x32.png') top left no-repeat;
+    height: 34px;
+    padding-left: 25px;
+}
+
+
+/* main rules */
+
+main {
+    margin: auto;
+    margin-top: 8px;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(/images/background-2.jpg);
+    min-height: 100vh;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    box-shadow: -3px 3px 15px;
+    border-radius: 2%;
+}
+
+main h1,
+main h3 {
+    color: #9b87b8;
+    font-style: italic;
+    margin: .5rem 0 .1rem 0;
+}
+
+main h1 {
+    font-size: 2rem;
+}
+
+main h3 {
+    font-size: 1.2rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin: 0 0 .3rem 0;
+}
+
+.labeled {
+    position: relative;
+}
+
+.labeled h6 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    width: 100%;
+    padding: .3rem 1rem;
+}
+
+.labeled h6 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+article {
+    margin-left: auto;
+    margin-left: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+
+/* Aside */
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+aside ul li {
+    padding: 8px;
+    margin-bottom: 2px;
+    margin-right: 8px;
+    background-color: #23cfa7;
+    color: #fff;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    border-radius: 50%;
+    width: 100%;
+}
+
+aside ul li span {
+    opacity: 0;
+    padding-right: 30%;
+}
+
+aside ul li:hover {
+    background-color: #9b87b8;
+    transition-duration: 0.5s;
+}
+
+aside ul li:hover span {
+    opacity: 1;
+    transition: padding 2s 0s linear;
+    padding: 0;
+}
+
+#leftmenu {
+    background-color: rgba(99, 52, 131, 0.2);
+    padding: 10px;
+    width: 270px;
+    box-shadow: 5px 5px 5px #9b87b8;
+}
+
+
+/* input form rule */
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    padding: 10px;
+    border: solid 1px #999;
+    border-radius: 2px;
+    width: 90%;
+}
+
+input[type="radio"] {
+    margin-bottom: 20px;
+}
+
+input[type="reset"] {
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Button {
+    padding: 10px;
+    border: solid 1px #ff9100;
+    border-radius: 3px;
+    background-color: #ff9100;
+    float: right;
+}
+
+
+/* Other special rules */
+
+#progressbar {
+    width: 20px;
+}
+
+#shoppingCart,
+.Shoppie {
+    border: 1px solid #9b87b8;
+    box-shadow: -5px 5px 5px #9b87b8;
+    padding: .25em;
+    margin-bottom: 5px;
+}
+
+.delete {
+    background-color: thistle;
+    border-radius: 5px;
+    box-shadow: 2px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+}
+
+.map {
+    width: 90%;
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 10px 10px mediumaquamarine;
+    margin: 1em;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+progress::-webkit-progress-bar {
+    height: 11px;
+    width: 150px;
+    margin: 0 auto;
+    background-color: #CCC;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px #777 inset;
+}
+
+.alert {
+    background-color: red;
+    color: white;
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+
+.searchbox {
+    padding: 5px;
+    margin: 10px 10px;
+    width: 178px;
+}
+
+table {
+    margin: 10px auto;
+    line-height: 1em;
+    box-shadow: #d4e4e1 5px 5px;
+}
+
+table tr th {
+    background-color: #23cfa7;
+    padding: 10px;
+}
+
+table tr td {
+    background-color: #9b87b8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100px;
+    padding: 5px;
+}
+
+.collapsed {
+    cursor: pointer;
+}
+
+.expand {
+    max-width: 100px;
+    white-space: normal;
+    overflow: visible;
+    cursor: pointer;
+}
+
+
+/* footer rules */
+
+footer {
+    background-color: #9b87b8;
+    font-size: 1.2rem;
+}
+
+footer h2 {
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 1rem 0 .3rem 0;
+}

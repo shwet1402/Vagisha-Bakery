@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vagisha's Bakery Shop">
+    <meta name="description" content="store front for Vagisha's Bakery Shop">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="icon" type="imgage/png" href="/Html5javascript/images/cake-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+
+    <title>Home | Vagisha's Bakery Shop</title>
+
+    <style>
+        /* .searchbox {
+            padding: 5px;
+            margin: 10px 10px;
+            width: 10em;
+        }
+        
+        .searchBtn {
+            margin-left: 10px;
+            margin-bottom: 1em;
+        } */
+        
+        #promos {
+            margin-top: 20px;
+            padding: 10px;
+            line-height: 2em;
+            background-color: ivory;
+            width: 1.5;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        @media only screen and (min-width:734px) {
+            article {
+                width: 40%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="row limited">
+            <section class="column small-12">
+                <img src="/images/logo.svg" alt="Cake logo">
+                <h1>Vagisha's</h1>
+                <h2>Fantastic Bakery Shop</h2>
+            </section>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li style="flex-grow:1;"></li>
+                <li><img src="images/logo.svg" width="50" height="40"> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pies.html">Pies</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <!-- <li><a href="https://www.openstreetmap.org/#map=18/47.676389199999996/-122.1252444" target="_blank">Maps</a></li> -->
+                <!-- <li><a href="#" onclick="drawMap();">GoogleMap</a></li> -->
+                <li class="active"><a href="map.html">Contact</a></li>
+                <li style="flex-grow:2;"></li>
+                <li style="text-align: center;">
+                    <form class="search" action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                        <input type="search" class="searchbox" placeholder="Search our store" />
+                        <input type="submit" class="searchbtn" value=" " />
+
+                    </form>
+                </li>
+
+                <!-- <li>
+                    <form action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
+                    <input type="search" class="searchbox" placeholder="Search our store" />
+                    <button type="submit">Search</button>
+                </li> -->
+                <li style="flex-grow:1;"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <aside id="leftmenu">
+            <div>
+                <section class="row limited column small-3">
+                    <img src="images/181-1813320_free-logo-maker-cake-logo-template-kue-vector.png" alt="Logo">
+                </section>
+                <!-- <img src="/Html5javascript/images/Test.svg" width="10" height="20" alt="Logo"> -->
+                <!-- <figcaption style="color:#b293c0; font-weight:600;">Vagisha's Cake shop</figcaption>-->
+
+                <section>
+                    <h4>Browse our pies</h4>
+                    <ul>
+                        <li>
+                            <a href="Pies.html">
+                                <div>All Pies</div>
+                                <span>8</span>
+                            </a>
+                        </li>
+                        <li><a href="#promos">Promotions</a></li>
+                    </ul>
+
+                    <!-- <p>Data download is in progress, please wait patiently:</p>
+                    <progress value="2" max="5"></progress> <br>
+                    <progress max="5"></progress> -->
+
+
+                    <!-- <section class="progressbar">
+                        <p Our goal is to have 1000 users:</p>
+                            <span>0</span>
+                            <progress value="50" max="500"></progress>
+                            <span>500</span>
+                            <p>Curret Users: 50</p>
+                    </section> -->
+                </section>
+            </div>
+
+        </aside>
+        <article>
+            <h1>Contact</h1>
+            <p>We are always glad to hear from you!</p>
+            <p>
+                <a href="mailto:example@vagishacakeshop.com?subject=Interested%20in%20pies">Send us an email</a> and let us know hoe we can help.
+            </p>
+            <form>
+                <div style="margin-top: 20px; margin-bottom: 20px;">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <div class="input-group">
+                            <label for="name">Name*</label>
+                            <input type="text" required name="name" id="name" />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="telephone">Phone</label>
+                            <input type="tel" placeholder="(XXX) XXX-XXXX" pattern="\(\d{3}\) \d{3}-\d{4}" name="telephone" id="telephone" />
+                        </div>
+
+                        <label><input type="radio" name="tel" value="Home"> Home </label>
+                        <label><input type="radio" name="tel" value="Work"> Work </label>
+
+                        <div class="input-group">
+                            <label for="mail">Email</label>
+                            <input type="email" name="mail" id="mail" />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="feedback">Feedback*</label>
+                            <textarea required name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+                <input type="submit" class="Button" value="Send">
+            </form>
+        </article>
+        <article>
+            <h1> Our shop Location on Map</h1>
+            <div id="map" class="map container">
+                <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d85974.33466389646!2d-122.17017885675266!3d47.67086375666789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sveloce!5e0!3m2!1sen!2sus!4v1598639425715!5m2!1sen!2sus"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <div id="locationinfo">
+                <h2>Curren Location information</h2>
+                <p>Timestamp: <span id="timestamp"></span></p>
+                <p>Latitude: <span id="lat"></span></p>
+                <p>Longitude: <span id="long"></span></p>
+                <p>Lat/Long Accuracy (in meters): <span id="accuracy"></span></p>
+
+                <p>Altitude (in meters above sea level): <span id="altitude"></span></p>
+                <p>Altitude Accuracy(in meters): <span id="altitudeaccuracy"></span></p>
+                <p>Heading (Degress from true north): <span id="heading"></span></p>
+                <p>Speed(in meters/second): <span id="speed"></span></p>
+            </div>
+            <div id="errorArea" class="alert d-none"></div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Bethany's Pie Shop</li>
+                    <li>123 Bakery Street</li>
+                    <li>Brussels, Belgium</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Catering</li>
+                    <li>Delivery</li>
+                    <li>Swag Shop</li>
+                    <li>Support</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <img src="images/logo2.png" alt="logo">
+                <p>&copy; 2020 Vagisha's Bakery Shop &bull; all rights reserved.</p>
+            </section>
+        </div>
+        <!-- end row -->
+
+    </footer>
+</body>
+<script src="js/menuToggle.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js">
+</script>
+<script>
+    'use strict';
+    var gmapController = (function() {
+        let map = null;
+        let vagimap = {
+            "lat": 47.6763972,
+            "lng": -122.12517520000002
+        };
+
+        function initialize() {
+            drawMap(bethanyMap);
+        }
+
+        function drawMap(mapObject) {
+            let pos = new google.maps.LatLng(mapObject.lat, mapObject.lng);
+
+            let mapOptions = {
+                center: pos,
+                zoom: 16,
+                mapTypeId: google.maps.mapTypeId.ROADMAP
+            };
+
+            map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+
+        return {
+            "initialize": initialize
+        }
+    })();
+</script>
+<script>
+    'use strict';
+    window.onload = function() {
+        let options = {
+            enableHighAccuracy: true,
+            timeout: 100000,
+            maximumAge: 300000
+        };
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(displayPosition, locationError, options);
+        } else {
+            displayError("Please update your browser to use Geolocation.");
+        }
+    };
+
+    function displayPosition(pos) {
+        document.getElementById("timestamp").innerText = new Date(pos.timestamp).toUTCString();
+        document.getElementById("lat").innerText = pos.coords.latitude.toFixed(3);
+        document.getElementById("long").innerText = pos.coords.longitude.toFixed(3);
+        document.getElementById("accuracy").innerText = pos.coords.accuracy;
+        document.getElementById("altitude").innerText = pos.coords.altitude ? pos.coords.altitude : "n / a";
+        document.getElementById("altitudeaccuracy").innerText = pos.coords.altitudeaccuracy ? pos.coords.altitudeaccuracy : "n/a";
+        document.getElementById("heading").innerText = pos.coords.heading;
+        document.getElementById("speed").innerText = pos.coords.speed;
+
+    }
+
+    function locationError(error) {
+        let msg = "";
+
+        console.log("error.message = " + error.message);
+
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                msg = "User does not want to display their location.";
+                break;
+            case error.POSITION_UNAVAILABLE:
+                msg = "Can't determine user's location.";
+                break;
+            case error.TIMEOUT:
+                msg = "The request for geolocation information timed out";
+                break;
+            case error.UNKOWN_ERROR:
+                msg = "An unknown error occured.";
+                break;
+
+        }
+
+        displayError(msg);
+    }
+
+    function displayError(msg) {
+        var locinfo = document.getElementById("locationinfo");
+        locinfo.classList.toggle("hidden");
+        let elem = document.getElementById("errorArea");
+        elem.classList.remove("d-none");
+        elem.innerHTML = msg;
+    }
+</script>
+
+</html>
