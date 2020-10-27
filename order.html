@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 
-    <link rel="icon" type="imgage/png" href="/images/cake-logo.png">
+    <link rel="icon" type="imgage/png" href="images/cake-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <title>Order | Vagisha Bakery Shop</title>
 
@@ -63,7 +63,7 @@
     <header>
         <div class="row limited">
             <section class="column small-12">
-                <img src="/images/logo.svg" alt="Cake logo">
+                <img src="images/logo.svg" alt="Cake logo">
                 <h1>Vagisha's</h1>
                 <h2>Fantastic Bakery Shop</h2>
             </section>
@@ -90,12 +90,6 @@
 
                     </form>
                 </li>
-
-                <!-- <li>
-                    <form action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
-                    <input type="search" class="searchbox" placeholder="Search our store" />
-                    <button type="submit">Search</button>
-                </li> -->
                 <li style="flex-grow:1;"></li>
             </ul>
         </div>
@@ -105,10 +99,9 @@
         <aside id="leftmenu">
             <div class="row limited">
                 <section class="column small-3">
-                    <img src="/images/181-1813320_free-logo-maker-cake-logo-template-kue-vector.png" alt="Logo">
+                    <img src="images/181-1813320_free-logo-maker-cake-logo-template-kue-vector.png" alt="Logo">
                 </section>
-                <!-- <img src="/Html5javascript/images/Test.svg" width="10" height="20" alt="Logo"> -->
-                <!-- <figcaption style="color:#b293c0; font-weight:600;">Vagisha's Cake shop</figcaption>-->
+
             </div>
             <section>
                 <h4>Browse our pies</h4>
@@ -195,14 +188,6 @@
             <div class="Shoppie">
                 <ul></ul>
                 <button onclick="history.go(-1)"> Modify Order</button>
-                <!-- <section class="small-3">
-                <img src="/" />
-                <div class="column">
-                    <div class="title"></div>
-                    <div class="price"></div>
-                </div>
-                <p class="desc"></p>
-            </section> -->
             </div>
         </aside>
 
@@ -236,11 +221,10 @@
             </section>
             <section class="column small-12 medium-6 large-3">
                 <h2>About Us</h2>
-                <img src="images/logo2.png" alt="logo">
+                <img width="50%" src="images/logo.svg" alt="logo">
                 <p>&copy; 2020 Vagisha's Bakery Shop &bull; all rights reserved.</p>
             </section>
         </div>
-        <!-- end row -->
 
     </footer>
 </body>
@@ -279,29 +263,6 @@
                 pie.appendChild(liElement);
             }
         }
-
-        // const order = localStorage.getItem("order");
-        // if (order) {
-        //     const pieOrder = JSON.parse(order);
-
-        //     const orderInput = document.querySelector("#pie-order");
-        //     orderInput.value = order;
-
-        //     const pie = document.querySelector(".pie");
-
-        //     const title = pie.querySelector(".title");
-        //     const price = pie.querySelector(".price");
-        //     const desc = pie.querySelector(".desc");
-
-        //     title.innerText = pieOrder.title;
-        //     price.innerText = pieOrder.price;
-        //     desc.innerText = "";
-
-        //     const img = pie.querySelector("img");
-        //     console.log(pieOrder.id);
-        //     img.setAttribute("src", `/images/products/${pieOrder.id}.jpg`);
-        //     img.setAttribute("alt", pieOrder.title);
-        // }
     });
 </script>
 

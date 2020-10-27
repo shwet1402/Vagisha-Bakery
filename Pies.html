@@ -22,7 +22,7 @@
     <header>
         <div class="row limited">
             <section class="column small-12">
-                <img src="/images/logo.svg" alt="Cake logo">
+                <img src="images/logo.svg" alt="Cake logo">
                 <h1>Vagisha's</h1>
                 <h2>Fantastic Bakery Shop</h2>
             </section>
@@ -46,12 +46,6 @@
 
                     </form>
                 </li>
-
-                <!-- <li>
-                    <form action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
-                    <input type="search" class="searchbox" placeholder="Search our store" />
-                    <button type="submit">Search</button>
-                </li> -->
                 <li style="flex-grow:1;"></li>
             </ul>
         </div>
@@ -84,23 +78,20 @@
                     <h1>Pies</h1>
                 </section>
 
-                <section class="column small-6 medium-6 large-3 pies" id="Pie-0">
+                <section class="column small-6 medium-6 large-3 pies" id="Pie0">
                     <div class="title">
                         <h3>Apple</h3>
                     </div>
-                    <img src="/images/products/pie-apple.jpg" alt="Apple pie">
+                    <img src="images/products/pie-apple.jpg" alt="Apple pie">
                     <div class="price column small-6">$12.95</div>
-                    <!-- <button data-order="pie-apple">Order</button>
-                    <button onclick="Delete(this);">Delete</button> -->
                 </section>
 
                 <section class="column small-6 medium-6 large-3 pies" id="Pie1">
                     <div class="title">
                         <h3>Blueberry</h3>
                     </div>
-                    <img src="images/products/pie-cherry.jpg" alt="blueberry pie">
+                    <img src="images/products/cake-blueberry.jpg" alt="blueberry pie">
                     <div class="price column small-6">$18.97</div>
-                    <!-- <button data-order="pie-cherry">Order</button> -->
                 </section>
 
 
@@ -108,7 +99,7 @@
                     <div class="title">
                         <h3>Cherry</h3>
                     </div>
-                    <img src="images/products/pie-cherry.jpg" alt="blueberry pie">
+                    <img src="images/products/pie-cherry.jpg" alt="cherry pie">
                     <div class="price column small-6">$16.97</div>
                 </section>
 
@@ -124,29 +115,29 @@
                     <div class="title">
                         <h3>Peach</h3>
                     </div>
-                    <img src="images/products/pie-peach.jpg" alt="cranberry cheesecake">
-                    <div class="price">$18.97</div>
+                    <img src="images/products/pie-peach.jpg" alt="peach cheesecake">
+                    <div class="price column small-6">$18.97</div>
                 </section>
                 <section class="column small-6 medium-6 large-3 pies" id="Pie5">
                     <div class="title">
                         <h3>Pumpkin</h3>
                     </div>
-                    <img src="images/products/pie-pumpkin.jpg" alt="cranberry cheesecake">
-                    <div class="price">$14.97</div>
+                    <img src="images/products/pie-pumpkin.jpg" alt="pumpkin cheesecake">
+                    <div class="price column small-6">$14.97</div>
                 </section>
                 <section class="column small-6 medium-6 large-3 pies" id="Pie6">
                     <div class="title">
                         <h3>Rhubarb</h3>
                     </div>
-                    <img src="images/products/pie-rhubarb.jpg" alt="cranberry cheesecake">
-                    <div class="price">$21.97</div>
+                    <img src="images/products/pie-rhubarb.jpg" alt="rhubarb cheesecake">
+                    <div class="price column small-6">$21.97</div>
                 </section>
                 <section class="column small-6 medium-6 large-3 pies" id="Pie7">
                     <div class="title">
                         <h3>Strawberry</h3>
                     </div>
-                    <img src="images/products/pie-strawberry.jpg" alt="cranberry cheesecake">
-                    <div class="price">$12.97</div>
+                    <img src="images/products/pie-strawberry.jpg" alt="strawberry">
+                    <div class="price column small-6">$12.97</div>
                 </section>
 
 
@@ -154,22 +145,16 @@
             </div>
         </article>
         <aside id="shoppingCart">
-            <section class="column small-12">
+            <section>
                 <p>
-                    <h2>Your Shopping cart </h2>
+                    <h2>Shopping Cart</h2>
                     <small>Drag your favourite Pies here</small><br><br>
                 </p>
             </section>
-
             <ul></ul>
             <br>
             <button data-order="order" onclick="PlaceOrder()">Place Order</button>
         </aside>
-        <!-- <section id="shoppingCart">
-            <h2>Your Shopping cart</h2>
-            <ul></ul>
-        </section> -->
-
 
     </main>
     <footer>
@@ -201,7 +186,7 @@
             </section>
             <section class="column small-12 medium-6 large-3">
                 <h2>About Us</h2>
-                <img src="images/logo2.png" alt="logo">
+                <img width="50%" src="images/logo.svg" alt="logo">
                 <p>&copy; 2020 Vagisha's Bakery Shop &bull; all rights reserved.</p>
             </section>
         </div>
@@ -223,7 +208,6 @@
                 index = i;
             }
         }
-
         var currentCart = null;
         currentCart = JSON.parse(localStorage.getItem('cart'));
         if (index > -1) {
@@ -241,34 +225,31 @@
         window.location.href = url;
     }
 
-    window.addEventListener("DOMContentLoaded", function(e) {
+    // window.addEventListener("DOMContentLoaded", function(e) {
 
-        const orderButtons = document.querySelectorAll("button[data-order]");
-        orderButtons.forEach(function(button) {
+    //     const orderButtons = document.querySelectorAll("button[data-order]");
+    //     orderButtons.forEach(function(button) {
 
-            button.addEventListener("click", function(e) {
-                const button = e.currentTarget;
-                const container = button.parentNode;
+    //         button.addEventListener("click", function(e) {
+    //             const button = e.currentTarget;
+    //             const container = button.parentNode;
 
-                const order = {
-                    id: button.getAttribute("data-order"),
-                    title: container.querySelector(".title").innerText,
-                    price: container.querySelector(".price").innerText,
+    //             const order = {
+    //                 id: button.getAttribute("data-order"),
+    //                 title: container.querySelector(".title").innerText,
+    //                 price: container.querySelector(".price").innerText,
 
-                };
+    //             };
 
-                localStorage.setItem("order", JSON.stringify(order));
+    //             localStorage.setItem("order", JSON.stringify(order));
 
-                const url = window.location.href.replace("Pies.html", "order.html");
-                window.location.href = url;
-            });
-        });
-    });
+    //             const url = window.location.href.replace("Pies.html", "order.html");
+    //             window.location.href = url;
+    //         });
+    //     });
+    // });
 </script>
 
-
-
 <script src="js/menuToggle.js"></script>
-
 
 </html>

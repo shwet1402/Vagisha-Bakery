@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 
-    <link rel="icon" type="/imgage/png" href="images/cake-logo.png">
+    <link rel="icon" type="/imgage/png" href="images/logo.svg">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 
     <title>Home | Vagisha's Bakery Shop</title>
@@ -46,8 +46,6 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="Pies.html">Pies</a></li>
                 <li><a href="specials.html">Specials</a></li>
-                <!-- <li><a href="https://www.openstreetmap.org/#map=18/47.676389199999996/-122.1252444" target="_blank">Maps</a></li> -->
-                <!-- <li><a href="#" onclick="drawMap();">GoogleMap</a></li> -->
                 <li><a href="map.html">Contact</a></li>
                 <li style="flex-grow:2;"></li>
                 <li style="text-align: center;">
@@ -58,11 +56,7 @@
                     </form>
                 </li>
 
-                <!-- <li>
-                    <form action="Pies.html" enctype="application/x-www-form-urlencoded" method="GET">
-                    <input type="search" class="searchbox" placeholder="Search our store" />
-                    <button type="submit">Search</button>
-                </li> -->
+
                 <li style="flex-grow:1;"></li>
             </ul>
         </div>
@@ -88,19 +82,6 @@
                         </li>
                         <li><a href="#promos">Promotions</a></li>
                     </ul>
-
-                    <!-- <p>Data download is in progress, please wait patiently:</p>
-                    <progress value="2" max="5"></progress> <br>
-                    <progress max="5"></progress> -->
-
-
-                    <!-- <section class="progressbar">
-                        <p Our goal is to have 1000 users:</p>
-                            <span>0</span>
-                            <progress value="50" max="500"></progress>
-                            <span>500</span>
-                            <p>Curret Users: 50</p>
-                    </section> -->
                 </section>
             </div>
 
@@ -169,7 +150,7 @@
             </section>
             <section class="column small-12 medium-6 large-3">
                 <h2>About Us</h2>
-                <img src="images/logo2.png" alt="logo">
+                <img width="50%" src="images/logo.svg" alt="logo">
                 <p>&copy; 2020 Vagisha's Bakery Shop &bull; all rights reserved.</p>
             </section>
         </div>
@@ -178,13 +159,5 @@
     </footer>
 </body>
 <script src="js/menuToggle.js"></script>
-<script>
-    function drawMap() {
-        window.navigator.geolocation.getCurrentPosition(function(pos) {
-            window.location.href = `https://google.com/maps?q=${pos.coords.latitude},${pos.coords.longitude}`;
-
-        })
-    }
-</script>
 
 </html>
